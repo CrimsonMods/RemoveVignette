@@ -1,0 +1,17 @@
+name: Update Dependencies
+
+on:
+  schedule:
+    - cron: '0 17 1 * *' # Every month on the 1st at 5pm UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    uses: CrimsonMods/actions/.github/workflows/dependency-update.yml@master
+    with:
+      project-path: ./RemoveVignette.csproj
+      target-branch: master

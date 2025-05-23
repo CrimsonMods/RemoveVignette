@@ -1,0 +1,15 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: CrimsonMods/actions/.github/workflows/mod-build.yml@master
+    with:
+      artifact-path: ./bin/Release/net6.0/RemoveVignette.dll
+      project-name: RemoveVignette

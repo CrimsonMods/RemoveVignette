@@ -1,16 +1,13 @@
 ﻿using HarmonyLib;
 using ProjectM.Presentation;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.HighDefinition;
 
 namespace RemoveVignette
 {
-    [HarmonyPatch]
+    [HarmonyPatch(typeof(MoodManagerComponent), nameof(MoodManagerComponent.OnEnable))]
     internal static class MoodManagerComponent_Patch
-    {
-        [HarmonyPostfix]
-        [HarmonyPatch(typeof(MoodManagerComponent), nameof(MoodManagerComponent.OnEnable))]
-        private static void OnEnable(MoodManagerComponent __instance)
+    {   
+        private static void Postfix(MoodManagerComponent __instance)
         {
             var sppTransform = __instance.transform.FindChild("Scene PostProcess");
             var volume = sppTransform.GetComponent<Volume>();

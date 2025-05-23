@@ -1,0 +1,28 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "skytech6"
+name = "Remove_Vignette"
+versionNumber = "0.1.0"
+description = "Removes the vignette from the screen"
+websiteUrl = "https://discord.gg/xzd5U5cNyD"
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack_V_Rising = "1.733.2"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./dist"
+target = ""
+
+[publish]
+communities = ["v-rising"]
+repository = "https://thunderstore.io"
+[publish.categories]
+v-rising = ["oakveil-update", "mods", "client"]

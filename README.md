@@ -1,5 +1,3 @@
-***I no longer play V-Rising and will not be updating any of my mods. Feel free to fork and continue development.***
-
 # RemoveVignette
 Removes Vignette
 
@@ -7,21 +5,32 @@ Removes Vignette
 - Install [BepInEx](https://v-rising.thunderstore.io/package/BepInEx/BepInExPack_V_Rising/)
 - Extract _RemoveVignette.dll_ into _(VRising folder)/BepInEx/plugins_
 
-### Support
-Join the [modding discord](https://vrisingmods.com/discord) for support and tag `@iZastic#0365`
+## Tech Support
 
-Submit a ticket on [GitHub](https://github.com/iZastic/vrising-removevignette/issues)
+Join my [Modding Discord](https://discord.gg/xzd5U5cNyD) for help with issues or anything modding related! 
 
-### Changelog
-`1.2.0`
-- Updated for 1.0
+## Support The Developer
 
-<details>
+Want to support my V Rising Mod development? 
 
-`1.1.0`
-- Updated for Gloomrot
+Buy/play my games! 
 
-`1.0.0`
-- Initial upload
+[Train Your Minibot](https://store.steampowered.com/app/713740/Train_Your_Minibot/) 
 
-</details>
+[Boring Movies](https://store.steampowered.com/app/1792500/Boring_Movies/) **FREE TO PLAY**
+
+[git gud](https://store.steampowered.com/app/1490570/git_gud/) **DEMO COMING May 29th**
+
+Donations Accepted
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/skytech6)
+
+**If you are looking to hire someone to make a mod for any Unity game reach out to me on Discord! (skytech6)**
+
+### Credits
+- `iZastic` - Original Mod Author
+
+-------
+
+# Want to Experience the Best of Crimson? 
+Join [The Cursed Collective](https://discord.gg/23SzgPPkxA) V Rising servers to play their exclusive CrimsonMods such as Raid Guard, Shard Wars, and more!

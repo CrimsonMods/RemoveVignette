@@ -7,23 +7,20 @@
     <Version>1.2.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
-    <Authors>iZastic</Authors>
-    <PackageId>$(Authors).$(AssemblyName)</PackageId>
-    <PackageProjectUrl>https://github.com/iZastic/vrising-removevignette</PackageProjectUrl>
-    <UnhollowedDllPath>..\BepInEx\unhollowed</UnhollowedDllPath>
+    <Authors>CrimsonMods, iZastic</Authors>
+    <PackageId>$(AssemblyName)</PackageId>
   </PropertyGroup>
 
+  <Target Name="Thunderstore Copy to Dist" AfterTargets="AfterBuild" Condition=" '$(Configuration' == 'Release'">
+		<Copy SourceFiles="$(OutDir)\RemoveVignette.dll" DestinationFolder="$(SolutionDir)/dist" />
+	</Target>
+
   <ItemGroup>
-    <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.2.794360001" />
+    <PackageReference Include="VRising.UnhollowedX.Client" Version="1.0.8" />
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
   </ItemGroup>
 
   <Import Project="$(MSBuildProjectDirectory)\PluginInfo.props" />
   <Import Project="$(MSBuildProjectDirectory)\Manifest.props" />
-
-  <Target Name="CopyPackageFiles" AfterTargets="Build">
-    <Copy ContinueOnError="true" SourceFiles="$(TargetDir)$(ProjectName).dll;$(IntermediateOutputPath)manifest.json;$(ProjectDir)icon.png;$(ProjectDir)README.md" DestinationFolder="$(ProjectDir)package" />
-    <Message Text="Copied build files to package directory" Importance="High" />
-  </Target>
 
 </Project>
