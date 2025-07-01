@@ -16,7 +16,7 @@
 	</Target>
 
   <ItemGroup>
-    <PackageReference Include="VRising.UnhollowedX.Client" Version="1.0.8" />
+    <PackageReference Include="VRising.UnhollowedX.Client" Version="1.0.9" />
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
   </ItemGroup>
 
